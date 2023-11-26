@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/Content/app.css'/>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <title><%= title%></title>
+</head>
+<body>
+
+                                       
+<%- include partials/mainNavBar%> <!-- Include the navigation bar partial (EJS template) into the current page -->
+
+    <% if (title === 'Products') { %>
+
+    <h1>Shop phones</h1>
+    <div id="products-container" class="flex-container">
+
+        <div class="product"> 
+            <img class="product1-image" src="/Assets/images/iphone/iphone15ProMaxBlack.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 15 Pro Max</h2>
+                <p class="product-price">From $1749<br>Color: Titanium Black</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="iphone 15 Pro Max">
+                <input type="hidden" name="Price" value="1749">
+                <input type="hidden" name="Color" value="Titanium Black">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product1-image" src="/Assets/images/iphone/iphone15ProMaxBlue.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 15 Pro Max</h2>
+                <p class="product-price">From $1749<br>Color: Titanium Blue</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="iphone 15 Pro Max">
+                <input type="hidden" name="Price" value="1749">
+                <input type="hidden" name="Color" value="Titanium Blue">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product1-image" src="/Assets/images/iphone/iphone15ProMaxNatural.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 15 Pro Max</h2>
+                <p class="product-price">From $1749<br>Color: Titanium Natural</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="iphone 15 Pro Max">
+                <input type="hidden" name="Price" value="1749">
+                <input type="hidden" name="Color" value="Titanium Natural">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product1-image" src="/Assets/images/iphone/iphone15ProMaxWhite.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 15 Pro Max</h2>
+                <p class="product-price">From $1749<br>Color: Titanium White</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="iphone 15 Pro Max">
+                <input type="hidden" name="Price" value="1749">
+                <input type="hidden" name="Color" value="Titanium White">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/iphone/iphone14Pro-deep_purple.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 14 Pro Max</h2>
+                <p class="product-price">From $1379<br>Color: Deep Purple</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="iphone 14 Pro Max">
+                <input type="hidden" name="Price" value="1379">
+                <input type="hidden" name="Color" value="Deep Purple">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/iphone/iphone14Pro-space-black.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 14 Pro Max</h2>
+                <p class="product-price">From $1379<br>Color: Space Black</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                  <input type="hidden" name="Name" value="iphone 14 Pro Max">
+                  <input type="hidden" name="Price" value="1379">
+                  <input type="hidden" name="Color" value="Space Black">
+                  <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/iphone/iphone14Pro-silver.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 14 Pro Max</h2>
+                <p class="product-price">From $1379<br>Color: Silver</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                  <input type="hidden" name="Name" value="iphone 14 Pro Max">
+                  <input type="hidden" name="Price" value="1379">
+                  <input type="hidden" name="Color" value="Silver">
+                  <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/iphone/iphone14Pro-gold.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">iphone 14 Pro Max</h2>
+                <p class="product-price">From $1379<br>Color: Gold</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="iphone 14 Pro Max">
+                <input type="hidden" name="Price" value="1379">
+                <input type="hidden" name="Color" value="Gold">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/samsung/samsung_GalaxyS23Ultra_phantomBlack.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">Samsung Galaxy S23 Ultra</h2>
+                <p class="product-price">From $1449<br>Color: Phantom Black</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="Samsung Galaxy S23 Ultra">
+                <input type="hidden" name="Price" value="1449">
+                <input type="hidden" name="Color" value="Phantom Black">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/samsung/samsung_GalaxyS23Ultra_green.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">Samsung Galaxy S23 Ultra</h2>
+                <p class="product-price">From $1449<br>Color: Green</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="Samsung Galaxy S23 Ultra">
+                <input type="hidden" name="Price" value="1449">
+                <input type="hidden" name="Color" value="Green">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/samsung/samsung_GalaxyS23Ultra_cream.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">Samsung Galaxy S23 Ultra</h2>
+                <p class="product-price">From $1449<br>Color: Cream</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="Samsung Galaxy S23 Ultra">
+                <input type="hidden" name="Price" value="1449">
+                <input type="hidden" name="Color" value="Cream">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/samsung/samsung_GalaxyS23Ultra_lavender.jpg" alt="iphone 15 pro Max">
+            <div class="product-info">
+                <h2 class="product-title">Samsung Galaxy S23 Ultra</h2>
+                <p class="product-price">From $1449<br>Color: Lavender</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="Samsung Galaxy S23 Ultra">
+                <input type="hidden" name="Price" value="1449">
+                <input type="hidden" name="Color" value="Lavender">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+    </div>
+<% } %>
+
+
+
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <script src="/Scripts/app.js"></script>
+</body>
+</html>
