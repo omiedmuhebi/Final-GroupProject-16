@@ -3,6 +3,10 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
+// for the authentication written by Barnabas Daniel and Ciaran
+let session = require('express-session');
+let passport = require('passport');
+let LocalStrategy = require('passport-local').Strategy; 
 
 // Database setup
 let mongoose = require('mongoose');
@@ -32,6 +36,16 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../../public')));
 app.use(express.static(path.join(__dirname, '../../node_modules')));
 
+// Set up middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(session({ secret: 'your-secret-key', resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Set up Passport
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -40,6 +54,32 @@ app.use('/items-list', itemsRouter); // Routes for cart page under '/items-list'
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
+// Implement login logic here using Passport
+app.post(
+  '/login',
+  passport.authenticate('local', {
+    successRedirect: '/home',
+    failureRedirect: '/login',
+  })
+);
+
+app.get('/home', isLoggedIn, (req, res) => {
+  res.send('Home Page');
+});
+
+app.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('/login');
+});
+
+// Middleware to check if the user is authenticated
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  }
+  res.redirect('/login');
+}
 
 // error handler
 app.use(function(err, req, res, next) {
