@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/Content/app.css'/>
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/> 
-    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
-    <title><%= title%></title>
-</head>
-<body>
+<% if (title === 'Products') { %>
 
-                                       
-<%- include partials/mainNavBar%> <!-- Include the navigation bar partial (EJS template) into the current page -->
-
-    <% if (title === 'Products') { %>
-
-    <h1>Shop phones</h1>
+    <h1 class="products-header1">Discover Your Perfect Smartphone</h1>
     <div id="products-container" class="flex-container">
 
         <div class="product"> 
@@ -188,11 +173,3 @@
 
     </div>
 <% } %>
-
-
-
-    <script src="/jquery/dist/jquery.min.js"></script>
-    <script src="/bootstrap/dist/js/bootstrap.min.js"></script> 
-    <script src="/Scripts/app.js"></script>
-</body>
-</html>

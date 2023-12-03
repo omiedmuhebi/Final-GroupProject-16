@@ -20,9 +20,14 @@ router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About' });
 });
 
-// Get Produts-viewpage
-router.get('/products-detail', function(req, res, next) {
-  res.render('index', { title: 'products-viewphone' });
+// Get Login page
+router.get('/login', function(req, res, next) {
+  res.render('index', { title: 'Login' });
+});
+
+// Get Login page
+router.get('/register', function(req, res, next) {
+  res.render('index', { title: 'Register' });
 });
 
 

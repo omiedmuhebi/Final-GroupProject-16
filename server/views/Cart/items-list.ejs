@@ -34,12 +34,9 @@
                                     <td class="text-center">$<%= item.Price %></td>
                                     <td class="text-center"><%= item.Colour %></td>
                                     <td class="text-center">
-                                        <a href="/cart/edit/<%= item._id %>" class="btn btn-primary btn-sm">
-                                            <i class="fas fa-edit"></i> Edit
-                                        </a>
 
                                         <button onclick="deleteItem('<%= item._id %>')" class="btn btn-danger btn-sm">
-                                          Delete
+                                          <i class="fa-solid fa-trash"></i> Remove Item
                                         </button>
 
                                     </td>

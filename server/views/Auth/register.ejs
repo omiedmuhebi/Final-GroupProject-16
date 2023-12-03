@@ -1,0 +1,38 @@
+
+<% if (title === 'Register') { %>
+<body class="register-body">
+
+<div class="register-container">
+    <h2 class="register-header"><%=title%></h2>
+    <form id="form-wrapper" action="registration_processing_script" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+        </div>
+          <div class="register-buttons">
+          <button type="submit" class="register-button">Register</button>
+          <a class="cancel-button-register" href="/home">Cancel</a>
+        </div>
+        <br>
+        <p>Already have an account?</p>
+        <br>
+        <a class="Login-button" href="/login">Login here</a>
+    </form>
+    
+</div>
+
+</body>
+
+<% } %>

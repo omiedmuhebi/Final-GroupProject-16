@@ -1,0 +1,209 @@
+.about-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*Hero section about*/
+header {
+  background-color: #f4f4f4; /* Consider using a color that matches your brand */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.hero-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.aboutHeader1 {
+  color: #1a1a1a; /* A dark color for contrast */
+  font-size: 2.5em; /* Large, eye-catching size */
+  margin-bottom: 20px;
+}
+
+.aboutParagraph1 {
+  color: #4a4a4a; /* Slightly lighter color for the paragraph */
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn-explore {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8800FF; /* A vibrant color that stands out */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-explore:hover {
+  background-color: #5f03ab; /* Slightly darker shade on hover */
+  text-decoration: none;
+}
+
+.image-div-about {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-about {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slogan-overlay {
+  position: absolute;
+  top: 50%;  /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to precisely center */
+  color: white; /* Assuming the slogan text is white for contrast */
+  font-size: 1.5em; /* Adjust size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1vw;
+}
+
+
+/*intro about page*/
+
+#intro {
+  color: black;
+  background-color: #f8f8f8; /* Light background for the section */
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 800px; /* Controlling the width for readability */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+}
+
+.intro-about-head { /* Corrected from .intro-about-head */
+  color: #1a1a1a; /* Dark color for the headline */
+  font-size: 2em; /* Large font size for the headline */
+  margin-bottom: 20px;
+  text-align: center; /* Centers the heading */
+}
+
+#intro h2 {
+  color: black; /* Slightly lighter color for the paragraph */
+  font-size: 3vw; /* Suitable font size for readability */
+  line-height: 1.6; /* Spacing between lines for better readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+  text-align: center; /* Justify aligns text for a neat look */
+}
+
+
+/*services about page*/
+
+.services {
+  background-color: #ffffff; /* White background for clarity */
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 800px; /* Control width for better readability */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+}
+
+.services h2 {
+  color: #1a1a1a; /* Dark color for the section title */
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center; /* Center the title */
+}
+
+.services p {
+  color: #333; /* Dark gray color for paragraph */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; /* Justify for a neat look */
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+.service-item h3 {
+  color: #007bff; /* A standout color for subheadings */
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #4a4a4a; /* Slightly lighter than the main text */
+}
+
+
+/*Contact section about page*/
+
+.contact-info {
+  background-color: #f8f8f8; /* Light background for the section */
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 600px; /* Controlling width for a compact look */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+.contact-info h2 {
+  color: #1a1a1a; /* Dark color for the headline */
+  font-size: 2em; /* Large font size for the headline */
+  margin-bottom: 20px;
+  text-align: center; /* Centers the heading */
+}
+
+.contact-info p, .additional-contact p {
+  color: #333; /* Dark gray color for the paragraph */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center; /* Center alignment for introductory text */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded edges */
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #8800FF; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #5f03ab; /* Darker shade on hover */
+}
+
+.additional-contact ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.additional-contact li {
+  margin-bottom: 10px; /* Space between items */
+}

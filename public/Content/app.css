@@ -1,5 +1,5 @@
 *{
-    font-family: Arial;
+    font-family: 'Poppins', sans-serif;
 }
 .navbar-custom {
     border-radius: 30px; /* Adjust the radius as needed */
@@ -7,6 +7,18 @@
     background-color: #000; /* If you want a specific background color */
     margin-left: 2vw;
     margin-right: 2vw;
+    text-decoration: none;
+}
+
+.products-header1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    font-weight: bold;
+    color: black;
+    font-size: 4vw;
+    font-family: 'Poppins';
 }
 
 #products-container {
@@ -85,6 +97,7 @@
     color: white;
     margin-top: 0.5vw;
     transition: all 0.3s ease;
+    padding:0.5vw;
 }
 
 .addToCartProductButton:hover{

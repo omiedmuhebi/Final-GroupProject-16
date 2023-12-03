@@ -1,0 +1,231 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+/* General Styles */
+.body-landingPage {
+    background-color: rgb(230, 230, 230);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+
+.FAQ-header{
+    color: black;
+}
+
+.headerContent {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    position: relative; /* For positioning inner elements */
+}
+
+.headerContent img.iphone15ProMax-all-colours {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0; /* Add space above and below the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerButtons {
+    margin-top: 20px;
+    display: inline-block; /* This will keep the buttons in the headerContent area */
+    width: 100%; /* Full width of the headerContent */
+    text-align: center; /* Centering buttons within the block */
+}
+
+.headerButtons a {
+    padding: 10px 20px;
+    margin: 5px; /* Space between buttons */
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Display buttons inline */
+}
+
+.headerButtons a:hover {
+    background-color: #0056b3;
+}
+
+.product-header{
+    color: black;
+}
+
+.headerButtons {
+    margin-top: 20px;
+}
+
+.headerButtons a {
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    background-color: #8800FF;
+    color: white;
+    border-radius: 2.2vw;
+    transition: background-color 0.3s ease;
+}
+
+.headerButtons a:hover {
+    background-color: #5f03ab;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+#brandSection, #FAQSection, #productSection {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.brandContent, .faqContent, .productShowcase {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.brand-header{
+    color: black;
+}
+
+/* Product Section Styles */
+#productSection {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.productShowcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between products */
+}
+
+.product-landing {
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.product-landing:hover {
+    transform: translateY(-5px);
+}
+
+.product-landing img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute; /* Positions the text absolutely within the product-landing div */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color: white; /* Set text color */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay-text-1 {
+    position: absolute; /* Absolutely positions the text within product-landing */
+    top: 10px; /* Positions the text at the bottom */
+    left: 10px; /* Aligns the text to the left */
+    color: white; /* Sets text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    max-width: 40%; /* Prevents text from spanning the entire width of the image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headerContent img.iphone15ProMax-all-colours {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+/* FAQ Section Styles */
+
+#FAQSection{
+    height: 100vh;
+    width: 100%;
+}
+.faqItem {
+    margin-bottom: 20px;
+}
+
+.faqItem h3 {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    max-width: 100%;
+}
+
+footer p, footer a {
+    color: white;
+    padding: 0.5vw;
+}
+footer i{
+    transition: all ease 0.3s;
+}
+
+footer i:hover{
+    transform: translateY(-5px);
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-landing {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .product-text {
+        width: calc(100% - 20px); /* Adjust width on smaller screens */
+    }
+}
