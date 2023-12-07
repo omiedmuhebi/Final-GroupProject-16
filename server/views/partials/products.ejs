@@ -171,5 +171,66 @@
             </div>
         </div>
 
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/google/Pixle-Pro8-Obsidian.jpg" alt="Pixle Pro 8">
+            <div class="product-info">
+                <h2 class="product-title">Google Pixle Pro 8</h2>
+                <p class="product-price">From $1349<br>Color: Obsidian</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="Google Pixle Pro 8">
+                <input type="hidden" name="Price" value="1349">
+                <input type="hidden" name="Color" value="Obsidian">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/google/Pixle-Pro8-Bay.jpg" alt="Pixle Pro 8">
+            <div class="product-info">
+                <h2 class="product-title">Google Pixle Pro 8</h2>
+                <p class="product-price">From $1349<br>Color: Bay</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="Google Pixle Pro 8">
+                <input type="hidden" name="Price" value="1349">
+                <input type="hidden" name="Color" value="Bay">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="product"> 
+            <img class="product-image" src="/Assets/images/google/Pixle-Pro8-Porcelain.jpg" alt="Pixle Pro 8">
+            <div class="product-info">
+                <h2 class="product-title">Google Pixle Pro 8</h2>
+                <p class="product-price">From $1349<br>Color: Porcelain</p>
+                <form action="/items-list/add-to-cart" method="POST">
+                <input type="hidden" name="Name" value="Google Pixle Pro 8">
+                <input type="hidden" name="Price" value="1349">
+                <input type="hidden" name="Color" value="Porcelain">
+                <button type="submit" class="addToCartProductButton">Add to Cart</button>
+              </form>
+            </div>
+        </div>
+
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.addToCartProductButton');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const form = this.closest('form');
+
+                    <% if (!user) { %>
+                        window.location.href = '/login'; // Redirect to login if not logged in
+                    <% } else { %>
+                        form.submit(); // Submit the form if logged in
+                    <% } %>
+                });
+            });
+        });
+    </script>
+
 <% } %>

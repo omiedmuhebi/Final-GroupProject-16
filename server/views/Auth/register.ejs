@@ -1,38 +1,35 @@
-
 <% if (title === 'Register') { %>
 <body class="register-body">
+    <% if (typeof success !== 'undefined') { %>
+        <div class="alert-success">
+            <%= success %>
+        </div>
+    <% } %>
+    <h2 class="register-header">Please Register</h2>
+    <div class="register-container">
+        <div class="register-form-container">
+            <form action="/users/register" method="post">
+                <div class="form-group">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="displayName" class="form-label">Display Name:</label>
+                    <input type="text" id="displayName" name="displayName" required>
+                </div>
 
-<div class="register-container">
-    <h2 class="register-header"><%=title%></h2>
-    <form id="form-wrapper" action="registration_processing_script" method="post">
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-        </div>
-        <div class="form-group">
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
-        </div>
-          <div class="register-buttons">
-          <button type="submit" class="register-button">Register</button>
-          <a class="cancel-button-register" href="/home">Cancel</a>
-        </div>
-        <br>
-        <p>Already have an account?</p>
-        <br>
-        <a class="Login-button" href="/login">Login here</a>
-    </form>
-    
-</div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
+                <button type="submit" class="register-button">Register</button>
+                <div class="linkToRegisterPage">
+                    <a href="/login" class="loginPageRegister">Already have an account</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
-
 <% } %>

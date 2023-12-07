@@ -1,0 +1,48 @@
+#order-success-body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.success-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw auto;
+}
+
+.success-form-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 400px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.order-success-h1 {
+  color: #32a852;
+  margin-bottom: 20px;
+}
+
+.order-success-paragraph {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.order-success-homeLink {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #32a852;
+  border-radius: 5px;
+  text-decoration: none;
+  transition:  background-color 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.order-success-homeLink:hover {
+  background-color: #289a45;
+  transform: translateY(-5px);
+}

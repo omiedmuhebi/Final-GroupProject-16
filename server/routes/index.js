@@ -30,29 +30,18 @@ router.get('/register', function(req, res, next) {
   res.render('index', { title: 'Register' });
 });
 
-
-
-
-module.exports = router;
-
-
-/*
-router.post('/add-to-cart', async (req, res, next) => {
-  try {
-      let newItem = new Item({ // Create a new assignment object
-          "Name": req.body.Name,
-          "Price": req.body.Price,
-          "Colour": req.body.Colour
-      });
-      await Item.create(newItem); // Save the new assignment to the database
-      res.redirect('/Items-list'); // Redirect to the assignments list page
-  } catch (err) {
-      console.error(err); // Log any errors encountered
-      res.render('Cart/items-list', { // Render error view in case of an error
-          error: 'Error on the server'
-      });
-  }
+// Get Login page
+router.get('/checkout', function(req, res, next) {
+  res.render('index', { title: 'Checkout' });
 });
-*/
+
+// Get Login page
+router.get('/order-success', function(req, res, next) {
+  res.render('index', { title: 'Order-success' });
+});
+
+
+
 
 module.exports = router;
+

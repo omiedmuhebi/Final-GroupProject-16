@@ -10,6 +10,12 @@
     text-decoration: none;
 }
 
+/* Target the navbar links */
+.navbar-nav .nav-link:hover {
+    text-decoration: none; /* Removes the underline on hover */
+}
+
+
 .products-header1{
     display: flex;
     justify-content: center;
